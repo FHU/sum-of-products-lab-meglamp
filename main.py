@@ -8,11 +8,12 @@ def sum_of_products(list1, list2):
     return(num)
         
 
-lis1 = input()
-lis2 = input()
-if len(lis1) == len(lis2):
-    number = sum_of_products(lis1,lis2)
-    print(number)
-else:
-    print("Error: numbers must be the same length")
+if __name__ == '__main__':
+    lis1 = input()
+    lis2 = input()
+    if len(lis1) == len(lis2):
+        number = sum_of_products(lis1,lis2)
+        print(number)
+    else:
+        print("Error: numbers must be the same length")
 
