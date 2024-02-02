@@ -2,8 +2,8 @@
 #change to test push and forks
 def sum_of_products(list1, list2):
     total = 0
-    li1 = list1)
-    li2 = list2)
+    li1 = list1
+    li2 = list2
 
     for i in range(0,len(list1)):
         if i == 0:
