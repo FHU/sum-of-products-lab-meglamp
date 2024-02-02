@@ -4,8 +4,8 @@ def sum_of_products(list1, list2):
     num = 0
 
     for i in range(0,len(list1)):
-        par1 = int(lis1[i])
-        par2 = int(lis2[i])
+        par1 = int(list1[i])
+        par2 = int(list2[i])
         num = num + (par1*par2)
     return(num)
         
