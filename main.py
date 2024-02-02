@@ -1,28 +1,21 @@
 #REMOVE PASS AND FIX THE FUNCTION
 #change to test push and forks
 def sum_of_products(list1, list2):
-    total = 0
-    li1 = int(list1)
-    li2 = int(list2)
+    num = 0
 
     for i in range(0,len(list1)):
-        if i == 0:
-            listy1 = li1 % 10
-            listy2 = li2 % 10 
-        else:
-            li1 = li1 // 10
-            li2 = li2 //10
-            listy1 = li1 % 10
-            listy2 = li2 % 10
-        numby = listy1 * listy2
-        total = total + numby
-    return(total)
-        
+        par1 = int(list1[i])
+        par2 = int(list2[i])
+        num = num + (par1*par2)
+    return(num)
+
 
 if __name__ == '__main__':
-    lis1 = input()
-    lis2 = input()
-    number = sum_of_products(lis1,lis2)
+    list1 = input()
+    list2 = input()
+    list1 = list1.split()
+    list2 = list2.split()
+    number = sum_of_products(list1,list2)
     print(number)
     
 
