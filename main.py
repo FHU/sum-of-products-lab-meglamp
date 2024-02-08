@@ -10,6 +10,7 @@ def sum_of_products(list1, list2):
     return(num)
 
 
+
 if __name__ == '__main__':
     list1 = input()
     list2 = input()
